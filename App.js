@@ -1,14 +1,20 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Platform, } from 'react-native';
 import {FontAwesome,MaterialIcons,
   MaterialCommunityIcons} from "@expo/vector-icons";
 import Content from './components/content';
-
-
+import { StatusBar } from 'react-native';
+ 
 export default class App extends React.Component {
   render() {
     return (
+      
       <View style={styles.container}>
+       <StatusBar
+  translucent
+  backgroundColor="rgba(0, 0, 0, 0.20)"
+  animated
+/>
       <View style={styles.toolbar}>
       <Text style={{fontWeight:"bold",color:"#757678",fontSize:21,marginLeft:10,marginTop:10}}> Stack Overflow</Text>
      <MaterialIcons name="more-vert" size={30} color="#737373" style={{marginRight:10,marginTop:10}} />

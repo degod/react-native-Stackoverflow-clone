@@ -2,7 +2,6 @@
     "telemetry.machineId": "fba60a6f03b62f661d047839410f71d3236e7917f365cdb85dac48f27fb6bc38",
     "openedPathsList": {
         "workspaces": [
-            "/home/odina/Desktop/designPractice/stackoverflow/myapp",
             "/home/odina/Desktop/designPractice/stackoverflow/myapp"
         ],
         "files": []
@@ -450,5 +449,19 @@
         }
     },
     "theme": "vs-dark vscode-theme-defaults-themes-dark_plus-json",
-    "themeBackground": "#1e1e1e"
+    "themeBackground": "#1e1e1e",
+    "windowsState": {
+        "openedWindows": [],
+        "lastActiveWindow": {
+            "folderPath": "/home/odina/Desktop/designPractice/stackoverflow/myapp",
+            "backupPath": "/home/odina/Desktop/designPractice/stackoverflow/myapp/Backups/2682ea05a7ec61b8ae2d27ac4dcdaa27",
+            "uiState": {
+                "mode": 1,
+                "x": 0,
+                "y": 93,
+                "width": 1270,
+                "height": 714
+            }
+        }
+    }
 }
