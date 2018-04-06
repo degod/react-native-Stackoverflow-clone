@@ -4,6 +4,7 @@ import {FontAwesome,MaterialIcons,MaterialCommunityIcons} from "@expo/vector-ico
 import { Picker,Fab,Icon } from 'native-base';
 import { ScrollView } from 'react-native';
 import List from "./List";
+import PTRView from 'react-native-pull-to-refresh';
 
 export default class Content extends React.Component { 
     constructor(props) {
@@ -12,6 +13,14 @@ export default class Content extends React.Component {
           selected1: "key1"
         };
       }
+
+
+ _refresh() {
+  return new Promise((resolve) => {
+    setTimeout(()=>{resolve()}, 2000)
+  });
+ }
+
       onValueChange(value) {
         this.setState({
           selected1: value
@@ -20,8 +29,10 @@ export default class Content extends React.Component {
 render() {
   
     return(
+      
         <View style={{flex:1,flexDirection:"column"}}>
-        <View style={{flex:1,flexDirection:"row",borderColor:"#E5E5E5",borderBottomWidth:1,paddingLeft:10,
+        
+        <View style={{height:60,flexDirection:"row",borderColor:"#E5E5E5",borderBottomWidth:1,paddingLeft:10,
         paddingRight:10,alignItems:"center"}}>
         <FontAwesome name="search" size={25} color="#7A7A7A" style={{flex:0.4,}}/>
         <TextInput underlineColorAndroid="transparent" placeholder="Search Questions" style={{flex:3}} />
@@ -40,18 +51,25 @@ render() {
 
 
       </View>
+      
       <View style={{flex:6}}>
+      <PTRView onRefresh={this._refresh} >
+       
        <ScrollView>
            <List />
              
            </ScrollView>
+           </PTRView>
+
+
+
            <Fab
             active={this.state.active}
             direction="up"
             containerStyle={{ }}
             style={{ backgroundColor: '#F48024' }}
             position="bottomRight"
-            onPress={() => this.setState({ active: !this.state.active })}>
+           onPress={() => alert("new question works")}>
       <MaterialCommunityIcons name="comment-question-outline" size={25} color="#F48C3A" />
             
           </Fab>

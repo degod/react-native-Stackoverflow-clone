@@ -1,29 +1,38 @@
 import React from 'react';
-import { StyleSheet, Text, View, Platform, } from 'react-native';
+import { StyleSheet, Text, View, Platform,KeyboardAvoidingView } from 'react-native';
 import {FontAwesome,MaterialIcons,
   MaterialCommunityIcons} from "@expo/vector-icons";
 import Content from './components/content';
 import { StatusBar } from 'react-native';
- 
+import PTRView from 'react-native-pull-to-refresh';
+
 export default class App extends React.Component {
+ 
+
+
+  _refresh() {
+
+
+
+  }
   render() {
+     
     return (
       
       <View style={styles.container}>
-       <StatusBar
-  translucent
-  backgroundColor="rgba(0, 0, 0, 0.20)"
-  animated
-/>
+  
+
+
       <View style={styles.toolbar}>
       <Text style={{fontWeight:"bold",color:"#757678",fontSize:21,marginLeft:10,marginTop:10}}> Stack Overflow</Text>
      <MaterialIcons name="more-vert" size={30} color="#737373" style={{marginRight:10,marginTop:10}} />
-   
     </View>
-      <View style={styles.content}>
-      <Content /> 
 
  
+
+      <View style={styles.content}>
+      <Content /> 
+      
       </View>
       <View style={styles.footer}>
       <View style={{alignSelf:"center",alignItems: 'center',
@@ -69,14 +78,14 @@ backgroundColor:"#FAFAFA",
 elevation:3,
 alignItems: 'center',
 flexDirection:"row",
-flex:1.2,
+height:80,
 justifyContent:"space-between"
   },
   content : {
     flex:7
   },
   footer: {
-    flex:1,
+    height:60,
     backgroundColor: "#F8F8F8",
     borderTopWidth: 1,
     borderColor: "#E6E6E6",

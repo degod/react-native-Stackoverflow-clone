@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, TextInput,Platform} from 'react-native';
 import {FontAwesome} from "@expo/vector-icons";
-import { Picker } from 'native-base';
+import { Picker,Fab } from 'native-base';
 
 
 
@@ -12,34 +12,49 @@ export default class Content extends React.Component {
          data:[
              {
                  title:"Drop down div infront of or blocking its dropdown menu",
-                 tags:"html,css,menu,dropdown"
+                 tags:"html,css,menu,dropdown",
+                 key:1
              },
              {
                 title:"Searching multiple files for list of words in a text file",
-                tags:"linux,grep"
+                tags:"linux,grep",
+                key:2
+                
             },
             {
                 title:"Toggle icon on Like with Javascript",
-                tags:"javascript,python,html,django,frontend"
+                tags:"javascript,python,html,django,frontend",
+                key:3
+                
             },
             {
                 title:"Modify data from XML Request with jquery",
-                tags:"jquery,xmlhttprequest"
+                tags:"jquery,xmlhttprequest",
+                key:4
+                
             },
             {
                 title:"ggplot2 - adding shading to a gantt chart to dilineate weekends",
-                tags:"ggplot2,gantt-chart"
+                tags:"ggplot2,gantt-chart",
+                key:5
+                
             },  {
                 title:"Cannot render const in a react component",
-                tags:"javascript,reactjs,web-app,gatsby"
+                tags:"javascript,reactjs,web-app,gatsby",
+                key:6
+                
             },
             {
                 title:"Javascript submit a form with input type file using an iframe",
-                tags:"javascript"
+                tags:"javascript",
+                key:7
+                
             },
             {
                 title:"UITableView insert row breaks scroll",
-                tags:"ios,objective-c,tableview"
+                tags:"ios,objective-c,tableview",
+                key:8
+                
             }
         
         
@@ -62,7 +77,7 @@ return(
 this.state.data.map(data => {
     return(
 
-<View style={{flexDirection:"row",height:80,justifyContent:"space-between",
+<View   key={data.key} style={{flexDirection:"row",height:80,justifyContent:"space-between",
     padding:10,borderBottomWidth:1,borderColor:"#E0E0E0"}}>
         <View style={{flex:1,flexDirection:"row",alignItems:"center"}}>
         <View style={{alignSelf:"center",width:50,height:30,
@@ -85,6 +100,7 @@ this.state.data.map(data => {
 
 
     </View>
+    
 )
 
 }

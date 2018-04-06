@@ -1,0 +1,23 @@
+[2018-04-06 18:21:55.436] [renderer1] [error] An unknown error occurred. Please consult the log for more details.
+[2018-04-06 18:22:01.782] [renderer1] [error] An unknown error occurred. Please consult the log for more details.
+[2018-04-06 18:22:04.989] [renderer1] [error] An unknown error occurred. Please consult the log for more details.
+[2018-04-06 18:22:07.864] [renderer1] [error] An unknown error occurred. Please consult the log for more details.
+[2018-04-06 18:22:10.270] [renderer1] [error] An unknown error occurred. Please consult the log for more details.
+[2018-04-06 18:22:12.736] [renderer1] [error] An unknown error occurred. Please consult the log for more details.
+[2018-04-06 18:22:15.919] [renderer1] [error] An unknown error occurred. Please consult the log for more details.
+[2018-04-06 18:22:18.055] [renderer1] [error] An unknown error occurred. Please consult the log for more details.
+[2018-04-06 18:32:07.590] [renderer1] [error] Cannot read property 'match' of undefined: TypeError: Cannot read property 'match' of undefined
+	at new MyCompletionItem (/usr/share/code/resources/app/extensions/typescript/out/features/completionItemProvider.js:54:34)
+	at TypeScriptCompletionItemProvider.provideCompletionItems (/usr/share/code/resources/app/extensions/typescript/out/features/completionItemProvider.js:232:26)
+	at <anonymous>
+[2018-04-06 18:32:12.363] [renderer1] [error] Cannot read property 'match' of undefined: TypeError: Cannot read property 'match' of undefined
+	at new MyCompletionItem (/usr/share/code/resources/app/extensions/typescript/out/features/completionItemProvider.js:54:34)
+	at TypeScriptCompletionItemProvider.provideCompletionItems (/usr/share/code/resources/app/extensions/typescript/out/features/completionItemProvider.js:232:26)
+	at <anonymous>
+[2018-04-06 18:32:36.614] [renderer1] [error] An unknown error occurred. Please consult the log for more details.
+[2018-04-06 18:33:21.982] [renderer1] [error] An unknown error occurred. Please consult the log for more details.
+[2018-04-06 18:33:52.483] [renderer1] [error] An unknown error occurred. Please consult the log for more details.
+[2018-04-06 18:34:08.308] [renderer1] [error] An unknown error occurred. Please consult the log for more details.
+[2018-04-06 18:34:36.777] [renderer1] [error] An unknown error occurred. Please consult the log for more details.
+[2018-04-06 18:42:42.380] [renderer1] [error] An unknown error occurred. Please consult the log for more details.
+[2018-04-06 18:54:52.089] [renderer1] [error] An unknown error occurred. Please consult the log for more details.
